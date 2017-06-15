@@ -6,51 +6,73 @@
         <hr>
         <link href="restaurantStyle.css" type="text/css" rel="stylesheet"/>
         <style>
+            form {padding-left: 325px;}
+            div {margin: 10px; padding-bottom: 10px; width: 500px;}
+            .title {float: left; width: 250px; text-align: right; padding-right: 25px;}
             textarea {vertical-align: text-top;}
+            .submit {padding-left: 360px; }
+            footer {text-align: center;}
         </style>
     </head><br>
     <body>
-        <div>
             &emsp;<a href="home.html">Home</a>&emsp;
             <a href="menu.html">Menu</a>&emsp;
             <a href="contact.html">Contact Us</a>&emsp;
             <br>
             <hr>
             <br>
-        </div>
-        <center><div>
+        <div>
             <form action="#" method="POST">
-                Name: <input type="text" name="Name" id="Name"/><br>
-                <br>
-                Email: <input type="text" name="Name" id="Name"/><br>
-                <br>
-                Phone: <input type="text" name="Name" id="Name"/><br>
-                <br>
-                Reason for Inquiry: <select name="Inquiry">
-                    <option value="Catering">Catering</option>
-                    <option value="Private Party">Private Party</option>
-                    <option value="Feedback">Feedback</option>
-                    <option value="Other">Other</option>
-                </select><br>
-                <br class="AddInfo">
-                Additional Information: <textarea name="Info" id="Info"></textarea><br>
-                <br>
-                Have you been to the restaurant? <input type="radio" name="Been" id="Been" value="No"checked>No</input>
-                <input type="radio" name="Been" id="Been" value="Yes">Yes</input><br>
-                <br>
-                Best days to contact you: <input type="checkbox" name="contact" id="contact" value="M">M</input>
-                <input type="checkbox" name="contact" id="contact" value="T">T</input>
-                <input type="checkbox" name="contact" id="contact" value="W">W</input>
-                <input type="checkbox" name="contact" id="contact" value="Th">Th</input>
-                <input type="checkbox" name="contact" id="contact" value="F">F</input><br>
-                <br>
-                <input type="submit" value="Send Request" name="Request" id="Request"/>
+                <div>
+                    <label for="name" class="title">Name:</label> 
+                    <input type="text" name="name" id="name"/>
+                </div>
+                <div>
+                    <label for="email" class="title">Email:</label> 
+                    <input type="text" name="email" id="email"/>
+                </div>
+                <div>
+                    <label for="phone" class="title">Phone:</label>
+                    <input type="text" name="phone" id="phone"/>
+                </div>
+                <div>
+                    <label for="inquiry" class="title">Reason for Inquiry:</label> 
+                    <select name="inquiry">
+                        <option value="Catering">Catering</option>
+                        <option value="Private Party">Private Party</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="info" class="title">Additional Information:</label>
+                    <textarea name="info" id="info"></textarea>
+                </div>
+                <div>
+                    <span for="been" class="title">Have you been to the restaurant?</span> 
+                    <input type="radio" name="been" id="been" value="No"checked></input>
+                    <label for="no">No</label>
+                    <input type="radio" name="been" id="been" value="Yes"></input>
+                    <label for="yes">Yes</label>
+                </div>
+                <div>
+                    <label for="contact" class="title">Best days to contact you:</label> 
+                    <input type="checkbox" name="contact" id="contact" value="M">M</input>
+                    <input type="checkbox" name="contact" id="contact" value="T">T</input>
+                    <input type="checkbox" name="contact" id="contact" value="W">W</input>
+                    <input type="checkbox" name="contact" id="contact" value="Th">Th</input>
+                    <input type="checkbox" name="contact" id="contact" value="F">F</input>
+                </div>
+                <div class="submit">   
+                    <input type="submit" value="Send Request" name="Request" id="Request"/>
+                </div>
             </form>
-        </div></center>
+        </div>
     </body>
+    <br>
     <hr>
-    <center><footer>
+    <footer>
         1234, Chicago, IL, 6ix<br>
        123-123-1234
-    </footer></center>
+    </footer>
 </html>
