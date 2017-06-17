@@ -8,12 +8,18 @@
             a:hover {text-decoration: underline; background-color: lightsalmon; }
             a:active {font-weight: bold;}                
             .fontLink {font-size: 20px;}
-         </style>
+            h2 {text-align: center; color: lightsalmon;}
+            .table-responsive {table-responsive;}
+            thead tr:hover {background-color: gray;}
+            tr:hover {background-color: purple;}
+        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
     </head>
     <body>
         <div class="head">
             <div class="image">
-                    <img src="https://images.genius.com/d4f4a8446685b32095799e1affbae6db.640x640x1.jpg"  height=600px alt="Birds in the Trap Sing McKnight"/>
+                    <img src="https://images.genius.com/d4f4a8446685b32095799e1affbae6db.640x640x1.jpg"  height=600px alt="Birds in the Trap Sing McKnight" class="img-circle"/>
                 </div>
                 <h1>Birds in the Trap Sing McKnight</h1>
                 <h3><a href="https://travisscott.com/" class="fontLink" target=_blank>Travis Scott</a></h3>
@@ -38,7 +44,7 @@
                 <li>The Weeknd</li>
             </ul>
         </div>
-            <table width="1000" border=.5px bordercolor="black">
+            <table class="table-striped table-responsive" width="1000" border=.5px bordercolor="black" class="table-responsive">
             <caption><h2>Tracks</h2></caption>
                 <thead>
                     <tr style="color:darkblue" bgcolor="grey">
@@ -47,7 +53,7 @@
                         <th>Track Length</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="table-zebra">
                     <tr>
                         <td align="center">1</td>
                         <td align="center">the ends</td>
@@ -121,5 +127,7 @@
                 </tbody>
             </table>
     </body>
-
+    <br>
+    <footer>
+    </footer>
 </html>
