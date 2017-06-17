@@ -1,0 +1,8 @@
+.head {text-align: center;}
+body {font-family: 'Times New Roman', Times, serif; }
+h1, .Credits, caption {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+.Credits {color: lightsalmon;}
+.image {background-image: url(https://images.genius.com/d4f4a8446685b32095799e1affbae6db.640x640x1.jpg);}
+.credits {font-style: italic;}
+table {margin: 0px auto; border: 5px solid purple; border-collapse: collapse; color: lightsalmon; background-color: navy; }
+tbody tr {font-style: italic;}
